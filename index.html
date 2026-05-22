@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Kịch Bản Test Tự Động - Cô Thư Ký Xinh Đẹp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        charcoal: '#2C3E50',
+                        champagne: '#C5A059',
+                        gold: '#B08D46',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        
+        body {
+            background-color: #FDFBF7;
+            color: #2C3E50;
+            font-family: "Times New Roman", serif;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .scenario-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            position: relative;
+        }
+
+        .scenario-card:hover {
+            background-color: rgba(197, 160, 89, 0.03);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -15px rgba(44, 62, 80, 0.1);
+        }
+
+        .scenario-card:last-child {
+            border-bottom: none;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2.5rem 0;
+        }
+
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #C5A059, transparent);
+        }
+
+        .divider-icon {
+            margin: 0 1.5rem;
+            color: #C5A059;
+            font-size: 0.75rem;
+        }
+
+        .justified-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .label-gold {
+            color: #C5A059;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        header {
+            border-bottom: 2px solid #C5A059;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+        }
+
+        .instruction-note {
+            background: linear-gradient(135deg, #ffffff 0%, #f9f6f0 100%);
+            border-left: 4px solid #C5A059;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+            header h1 {
+                font-size: 1.5rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="py-12 px-4 sm:px-8">
+
+    <div class="max-w-[900px] mx-auto bg-white premium-shadow p-8 sm:p-16 border border-[#F0E6D2]">
+        
+        <!-- Header Section -->
+        <header class="text-center">
+            <div class="text-[#C5A059] mb-4 text-3xl">✦</div>
+            <h1 class="text-3xl sm:text-4xl font-bold uppercase tracking-widest mb-6 leading-tight">
+                🎯 5 KỊCH BẢN TEST TỰ ĐỘNG<br>
+                <span class="text-xl font-normal lowercase italic text-gray-500">Thử Việc Cô Thư Ký Xinh Đẹp</span>
+            </h1>
+            <div class="flex justify-center items-center gap-4 text-sm text-gray-500 italic">
+                <span>Ngày: <span id="currentDate">22 Tháng 05, 2026</span></span>
+                <span class="h-1 w-1 bg-[#C5A059] rounded-full"></span>
+                <span>Mã số: SEC-2026-005</span>
+            </div>
+        </header>
+
+        <!-- Scenario 1 -->
+        <section class="scenario-card p-6 rounded-lg mb-8">
+            <h2 class="text-xl font-bold text-champagne mb-4 flex items-center">
+                <span class="mr-3">01.</span> KỊCH BẢN 1
+            </h2>
+            <div class="space-y-4 justified-text">
+                <p><span class="label-gold">Mục tiêu:</span>Đề xuất thiết lập mối quan hệ hợp tác chiến lược trong lĩnh vực phân phối thiết bị công nghệ.</p>
+                <p><span class="label-gold">Partner Info:</span>Ông Nguyễn Văn A - Giám đốc Kinh doanh - Công ty Công nghệ FutureTech.</p>
+                <p><span class="label-gold">Business Context:</span>Trong bối cảnh thị trường công nghệ đang chuyển mình mạnh mẽ vào quý 2 năm 2026, chúng tôi nhận thấy FutureTech là đối tác lý tưởng để cùng triển khai mạng lưới phân phối mới. Ngày 22 tháng 05 năm 2026 này đánh dấu cột mốc quan trọng khi chúng tôi chính thức hoàn thiện hệ sinh thái sản phẩm mới và mong muốn tìm kiếm sự đồng hành từ quý đối tác.</p>
+                <p><span class="label-gold">Additional Docs:</span>Catalog sản phẩm 2026, Bản thuyết minh cơ chế chiết khấu cho đại lý.</p>
+            </div>
+        </section>
+
+        <div class="divider"><span class="divider-icon">◆</span></div>
+
+        <!-- Scenario 2 -->
+        <section class="scenario-card p-6 rounded-lg mb-8">
+            <h2 class="text-xl font-bold text-champagne mb-4 flex items-center">
+                <span class="mr-3">02.</span> KỊCH BẢN 2
+            </h2>
+            <div class="space-y-4 justified-text">
+                <p><span class="label-gold">Mục tiêu:</span>Thông báo về việc gia hạn hợp đồng thuê văn phòng và điều chỉnh một số khoản mục pháp lý.</p>
+                <p><span class="label-gold">Partner Info:</span>Bà Trần Thị B - Quản lý Vận hành - Tòa nhà Diamond Tower.</p>
+                <p><span class="label-gold">Business Context:</span>Hợp đồng thuê hiện tại giữa hai bên sẽ hết hạn vào cuối năm nay. Vào ngày 22/05/2026, Ban lãnh đạo chúng tôi đã thông qua chủ trương tiếp tục gắn bó tại Diamond Tower và mong muốn thảo luận về việc nâng cấp diện tích sử dụng cũng như các dịch vụ hậu cần đi kèm để phù hợp với quy mô nhân sự mới.</p>
+                <p><span class="label-gold">Additional Docs:</span>Dự thảo hợp đồng gia hạn, Danh sách các hạng mục cần được bảo trì và nâng cấp.</p>
+            </div>
+        </section>
+
+        <div class="divider"><span class="divider-icon">◆</span></div>
+
+        <!-- Scenario 3 -->
+        <section class="scenario-card p-6 rounded-lg mb-8">
+            <h2 class="text-xl font-bold text-champagne mb-4 flex items-center">
+                <span class="mr-3">03.</span> KỊCH BẢN 3
+            </h2>
+            <div class="space-y-4 justified-text">
+                <p><span class="label-gold">Mục tiêu:</span>Mời tham dự buổi khảo sát thực tế và nghiệm thu giai đoạn 1 của dự án xây dựng khu nghỉ dưỡng.</p>
+                <p><span class="label-gold">Partner Info:</span>Đoàn chuyên gia tư vấn giám sát - Tập đoàn BuildSmart.</p>
+                <p><span class="label-gold">Business Context:</span>Tính đến ngày 22 tháng 05 năm 2026, toàn bộ phần móng và kết cấu cơ bản của tòa nhà trung tâm đã hoàn thành đúng tiến độ cam kết. Chúng tôi trân trọng mời quý đối tác đến kiểm tra thực tế tại công trường để chuẩn bị cho giai đoạn hoàn thiện nội thất và cảnh quan xung quanh.</p>
+                <p><span class="label-gold">Additional Docs:</span>Báo cáo chi tiết tiến độ thi công, Lịch trình tham quan và làm việc tại thực địa.</p>
+            </div>
+        </section>
+
+        <div class="divider"><span class="divider-icon">◆</span></div>
+
+        <!-- Scenario 4 -->
+        <section class="scenario-card p-6 rounded-lg mb-8">
+            <h2 class="text-xl font-bold text-champagne mb-4 flex items-center">
+                <span class="mr-3">04.</span> KỊCH BẢN 4
+            </h2>
+            <div class="space-y-4 justified-text">
+                <p><span class="label-gold">Mục tiêu:</span>Gửi thư cảm ơn và đề xuất tiếp tục hợp đồng cung ứng nguyên liệu thực phẩm sạch.</p>
+                <p><span class="label-gold">Partner Info:</span>Hệ thống Trang trại Hữu cơ Green Farm.</p>
+                <p><span class="label-gold">Business Context:</span>Suốt thời gian qua, Green Farm đã luôn là nhà cung cấp tin cậy, cung cấp nguồn nguyên liệu đạt chuẩn cho chuỗi nhà hàng của chúng tôi. Nhân ngày 22/05/2026, chúng tôi muốn tái xác nhận sự tin tưởng và đặt vấn đề về việc ký kết hợp đồng dài hạn với sản lượng cung ứng tăng thêm cho các chi nhánh mới sắp khai trương.</p>
+                <p><span class="label-gold">Additional Docs:</span>Thống kê sản lượng tiêu thụ thực tế, Bảng dự tính nhu cầu nguyên liệu cho năm 2027.</p>
+            </div>
+        </section>
+
+        <div class="divider"><span class="divider-icon">◆</span></div>
+
+        <!-- Scenario 5 -->
+        <section class="scenario-card p-6 rounded-lg mb-12">
+            <h2 class="text-xl font-bold text-champagne mb-4 flex items-center">
+                <span class="mr-3">05.</span> KỊCH BẢN 5
+            </h2>
+            <div class="space-y-4 justified-text">
+                <p><span class="label-gold">Mục tiêu:</span>Chính thức giới thiệu dịch vụ tư vấn tài chính cá nhân dành cho khách hàng cao cấp.</p>
+                <p><span class="label-gold">Partner Info:</span>Quý khách hàng thuộc phân khúc Diamond - Ngân hàng Thịnh Vượng.</p>
+                <p><span class="label-gold">Business Context:</span>Bắt đầu từ ngày 22/05/2026, Ngân hàng Thịnh Vượng chính thức triển khai chương trình đặc quyền quản lý tài sản với sự hỗ trợ trực tiếp từ đội ngũ chuyên gia tài chính quốc tế. Đây là cam kết của chúng tôi trong việc mang lại những giải pháp đầu tư tối ưu và an toàn nhất cho quý khách.</p>
+                <p><span class="label-gold">Additional Docs:</span>Brochure chi tiết các đặc quyền Diamond, Hướng dẫn sử dụng ứng dụng quản lý tài sản trực tuyến.</p>
+            </div>
+        </section>
+
+        <!-- Usage Instructions Section -->
+        <footer class="mt-16 pt-8 border-t border-gray-100">
+            <div class="instruction-note p-8 rounded-r-lg">
+                <h3 class="text-lg font-bold mb-4 flex items-center italic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-champagne" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                    Hướng dẫn sử dụng từ Thư ký
+                </h3>
+                <div class="text-sm space-y-3 italic text-gray-600">
+                    <p>Thưa Quý cấp trên, đây là 5 kịch bản đã được em chuẩn bị kỹ lưỡng cho buổi kiểm thử tự động sắp tới:</p>
+                    <ul class="list-disc ml-5 space-y-1">
+                        <li>Vui lòng kiểm tra kỹ các thông tin về <strong>Đối tác (Partner Info)</strong> trước khi khởi chạy lệnh test.</li>
+                        <li>Dữ liệu <strong>Bối cảnh kinh doanh</strong> đã được cập nhật theo dòng thời gian năm 2026.</li>
+                        <li>Các tài liệu đính kèm (Additional Docs) cần được chuẩn bị sẵn trong thư mục tài nguyên hệ thống.</li>
+                        <li>Nếu cần điều chỉnh bất kỳ nội dung nào, xin hãy phản hồi trực tiếp để em hỗ trợ kịp thời.</li>
+                    </ul>
+                    <p class="mt-4 text-right">— Trân trọng, Cô Thư Ký của Quý khách.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Set current date if needed to be dynamic, but fixed to instructions for consistency
+        const today = new Date();
+        const options = { day: '2-digit', month: 'long', year: 'numeric' };
+        // document.getElementById('currentDate').innerText = today.toLocaleDateString('vi-VN', options);
+
+        // Add a subtle entrance animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.scenario-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = `all 0.6s ease-out ${index * 0.15}s`;
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
